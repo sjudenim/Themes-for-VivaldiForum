@@ -1,10 +1,9 @@
 /* Colour variables */
-
 :root {
     --main-bg: hsl(220, 9%, 94%);
     --main-fg: hsl(0, 0%, 20%);
     --header-bg: hsl(210, 3%, 13%);
-    --header-fg: hsl(0, 0%, 50%);;
+    --header-fg: hsl(0, 0%, 50%);
     --nav-bg: hsl(210, 2%, 16%);
     --nav-fg: hsl(0, 0%, 70%);
     --menu-bg: hsl(220, 9%, 96%);
@@ -41,9 +40,7 @@ body {
     overflow-x: hidden;
 }
 
-
 /* Logo */
-
 #vivaldilogo img {
     display: none !important;
 }
@@ -56,32 +53,47 @@ body {
 
 
 /*** Header ***/
-
-#vivaldiheader {
+#vivaldi-header {
     background-color: var(--header-bg) !important;
     margin-top: 0;
     height: 50px;
 }
 
-#vivaldiheader>.row {
+#vivaldi-header>.row {
     padding: 13px 15px;
 }
 
-#vivaldimenu a.has-submenu:hover {
-    color: var(--accent-color);
-    margin-top: -8px;
-    padding-top: 13px;
-    height: 50px;
-}
-
-#vivaldiheader a,
-#vivaldiheader a:active, 
-#vivaldiheader a:focus, 
-#vivaldiheader a:visited {
+#vivaldi-header a,
+#vivaldi-header a:active, 
+#vivaldi-header a:focus, 
+#vivaldi-header a:visited {
     color: var(--header-fg);
 }
 
-#vivaldimenu a.current, #vivaldiheader a.current:hover {
+#vivaldinav {
+    position: absolute;
+    top: -4px;
+    height: 50px;
+    right: 120px;
+    left: 170px;
+}
+
+#vivaldilogin {
+    z-index: 999;
+    position: absolute;
+    top: -4px;
+    right: -13px;
+}
+
+#logged-in-menu {
+    margin-top: -3px;
+}
+
+#vivaldimenu a, #vivaldimenu a:hover {
+    font-weight: 400
+}
+
+#vivaldimenu a:hover {
     color: var(--accent-color);
 }
 
@@ -144,9 +156,7 @@ a.dropdown-toggle:active,
     padding: 1px 2px;
 }
 
-
 /* Header dropdown menus */
-
 #vivaldimenu .hov {
     padding-bottom: 0;
     height: 30px;
@@ -293,7 +303,6 @@ li.divider {
 
 
 /** Submenu **/
-
 #submenu {
     background-color: var(--nav-bg) !important;
     border: none;
@@ -323,9 +332,8 @@ li.divider {
 
 
 /*** Content ***/
-
 #content {
-    margin-top: .5%;
+    margin-top: 30px;
     background: var(--second-bg) !important;
     border-radius: 0;
     border: 10px solid var(--second-bg);
@@ -474,9 +482,7 @@ span.chat-timestamp.timeago {
 }
 */
 
-
 /* Search page */
-
 .form-control,
 .form-control:focus,
 input.form-control, select.form-control,
@@ -504,9 +510,7 @@ div.panel-body {
     background: var(--second-bg)
 }
 
-
 /* Community page */
-
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     padding: 10px;
     border-top: 1px solid var(--second-bg);
@@ -518,7 +522,6 @@ div.panel-body {
     background: var(--main-bg) !important;
     border: 0
 }
-
 
 /** Code box **/
 pre {
@@ -540,9 +543,7 @@ div.content pre code {
     color: var(--second-fg)
 }
 
-
 /* Code mark up */
-
 .hljs-keyword, .hljs-selector-tag {
     color: var(--button-bg);
 }
@@ -568,9 +569,7 @@ div.content pre code {
     color: var(--accent-color);
 }
 
-
 /** Message composer + profile button **/
-
 .composer,
 .composer .title-container .title {
     background-color: var(--second-bg);
@@ -609,7 +608,6 @@ textarea.write, div.preview.well {
 }
 
 /* Composer tooltip */
-
 .taskbar-composer::after {
     position: absolute;
     text-align: center;
@@ -636,7 +634,6 @@ textarea.write, div.preview.well {
 }
 
 /* Emoji picker */
-
 .emoji-dialog .top-bar {
     height: 0
 }
@@ -681,9 +678,7 @@ textarea.write, div.preview.well {
     height: 43px
 }
 
-
 /** Chat **/
-
 .chat-modal .chat-content li.chat-message .chat-user a, .expanded-chat .chat-content li.chat-message .chat-user a {
     color: var(--third-fg);
 }
@@ -801,9 +796,7 @@ li.chat-message.clear {
 }
 
 
-
 /*** Buttons ***/
-
 .btn.btn-primary {
     background: var(--button-bg);
     border-radius: 4px;
@@ -968,9 +961,7 @@ ul.dropdown-menu.dropdown-menu-right a:hover {
     right: 35px;
 }
 
-
 /* Vote indicator */
-
 .votes a {
     background-color: var(--grey);
 }
@@ -991,7 +982,6 @@ span.votes a:hover, .upvoted i.fa.fa-chevron-up:hover, .downvoted i.fa.fa-chevro
 .topic .votes [component="post/downvote"].downvoted {
     background-color: hsl(346, 98%, 60%) !important;
 }
-
 
 /* Advanced formatting emoji mod */
 .vivaldi-mod-modal-box {
@@ -1022,9 +1012,7 @@ span.votes a:hover, .upvoted i.fa.fa-chevron-up:hover, .downvoted i.fa.fa-chevro
 }
 
 
-
 /* Hiding stuff  */
-
 .menuwrapper .tooltip, #header-menu .tooltip, .account .cover .avatar-wrapper .tooltip {
     display: none !important;
 }
@@ -1035,7 +1023,6 @@ span.votes a:hover, .upvoted i.fa.fa-chevron-up:hover, .downvoted i.fa.fa-chevro
 
 
 /****** This code still needs to be addressed ********/
-
 .category>ul>li:not(.unread) h2 a,
 .panel-title {
     color: var(--header-fg);
@@ -1085,8 +1072,6 @@ ul.formatting-group li:hover {
 li[data-nid^="new_post"]::before, li[data-nid^="upvote"]::before, li[data-nid^="follow"]::before, li[data-nid^="move"]::before, li[data-nid^="chat"]::before, li[data-nid^="tid"]::before {
     color: var(--second-fg) !important;
 }
-
-
 
 .dropmarker, .dropmarker:after {
     background: var(--main-fg);
