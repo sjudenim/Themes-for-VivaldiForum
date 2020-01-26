@@ -305,7 +305,7 @@ li.divider {
     color: hsla(0, 0%, 50%, .3);
 }
 
-/* Sub-menu
+/* Navigation bar
   ----------------------------
 */
 #submenu {
@@ -315,6 +315,8 @@ li.divider {
     top: 50px !important;
     height: 50px;
 }
+
+span.visible-xs-inline.showmenutext {display: none !important}
 
 #submenu li, #submenu ul {
     height: 50px;
