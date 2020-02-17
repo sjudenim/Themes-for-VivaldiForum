@@ -50,16 +50,9 @@ body {
     height: 50px;
 }
 
-#vivaldi-header>.row {
-    padding: 13px 15px;
-}
+#vivaldi-header>.row {padding: 13px 15px}
 
-#vivaldi-header a,
-#vivaldi-header a:active, 
-#vivaldi-header a:focus, 
-#vivaldi-header a:visited {
-    color: var(--header-fg);
-}
+#vivaldi-header a, #vivaldi-header a:active, #vivaldi-header a:focus, #vivaldi-header a:visited {color: var(--header-fg)}
 
 #vivaldinav {
     position: absolute;
@@ -76,17 +69,11 @@ body {
     right: -13px;
 }
 
-#logged-in-menu {
-    margin-top: -3px;
-}
+#logged-in-menu {margin-top: -3px}
 
-#vivaldimenu a, #vivaldimenu a:hover {
-    font-weight: 400
-}
+#vivaldimenu a, #vivaldimenu a:hover {font-weight: 400}
 
-#vivaldimenu a:hover {
-    color: var(--accent-color);
-}
+#vivaldimenu a:hover, #vivaldimenu a.current, #vivaldimenu a:hover {color: var(--accent-color) !important}
 
 a.dropdown-toggle:focus,
 a.dropdown-toggle img:focus,
@@ -113,14 +100,9 @@ a.btn-login:hover, a.btn-login:focus {
     color: var(--accent-color) !important;
 }
 
-.menu-section-list a:hover, .slideout-menu .btn-login:hover, .slideout-menu .btn-register:hover {
-    background: var(--menu-highlight) !important;
-}
+.menu-section-list a:hover, .slideout-menu .btn-login:hover, .slideout-menu .btn-register:hover {background: var(--menu-highlight) !important}
 
-ul.nav.navbar-nav.navbar-left li a,
-li a span {
-    font-weight: normal;
-}
+ul.nav.navbar-nav.navbar-left li a, li a span {font-weight: normal}
 
 a.dropdown-toggle:focus,
 a.dropdown-toggle img:focus,
@@ -134,23 +116,8 @@ a.dropdown-toggle:active,
 
 #vivaldimenu a .sub-arrow {display: none}
 
-.unread-count:after {
-    position: absolute;
-    left: 23px;
-    top: 10px;
-    font-size: .8em;
-    text-align: center;
-    border: 0;
-    color: var(--accent-color);
-    font-weight: 400;
-    background: transparent;
-    padding: 1px 2px;
-}
-
 /* Logo */
-#vivaldilogo img, #vivaldi-header #vivaldi-icon img {
-    display: none !important;
-}
+#vivaldilogo img, #vivaldi-header #vivaldi-icon img {display: none !important}
 
 #vivaldilogo, #vivaldi-header #vivaldi-icon {
     background: url('https://raw.githubusercontent.com/luetage/vivaldi_forum_mod/master/themes/img/logo-white.png') no-repeat;
@@ -192,9 +159,7 @@ a.dropdown-toggle:active,
     color: var(--menu-fg)
 }
 
-#vivaldimenu ul a {
-    color: var(--menu-fg);
-}
+#vivaldimenu ul a {color: var(--menu-fg)}
 
 #vivaldimenu ul a:hover {
     background: var(--menu-highlight);
@@ -244,23 +209,13 @@ ul.chat-list.chats-list li, img.user-img.avatar.avatar-sm.avatar-rounded {
     margin: 0;
 }
 
-.header .chat-list>li, .slideout-menu .chat-list>li {
-    margin-top: 8px;
-}
+.header .chat-list>li, .slideout-menu .chat-list>li {margin-top: 8px}
 
-.header .chat-list>li:not(:last-child), .slideout-menu .chat-list>li:not(:last-child) {
-    border-bottom: 0;
-}
+.header .chat-list>li:not(:last-child), .slideout-menu .chat-list>li:not(:last-child) {border-bottom: 0}
 
-.header .notification-list li.unread, .slideout-menu .notification-list li.unread {
-    background-color: var(--menu-highlight);
-}
+.header .notification-list li.unread, .slideout-menu .notification-list li.unread {background-color: var(--menu-highlight)}
 
-li a span,
-a.mark-all-read,
-.dropdown-menu>li>a {
-    color: var(--second-fg);
-}
+li a span, a.mark-all-read, .dropdown-menu>li>a {color: var(--second-fg)}
 
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus,
@@ -269,21 +224,13 @@ button.btn.btn-link:hover {
     color: var(--second-fg);
 }
 
-.dropdown-menu {
-    margin: 0;
-}
+.dropdown-menu {margin: 0}
 
-.dropdown-menu>.top-divider {
-    margin: -5px;
-}
+.dropdown-menu>.top-divider {margin: -5px}
 
-.dropdown-menu>.bottom-divider {
-    margin: 0;
-}
+.dropdown-menu>.bottom-divider {margin: 0}
 
-.header .notif-dropdown-link {
-    border-top: 1px solid hsla(0, 0%, 40%, .2);
-}
+.header .notif-dropdown-link {border-top: 1px solid hsla(0, 0%, 40%, .2)}
 
 li.divider {
     background-color: hsla(0, 0%, 40%, .2) !important;
@@ -301,9 +248,7 @@ li.divider {
     padding-right: 5px;
 }
 
-.status.offline {
-    color: hsla(0, 0%, 50%, .3);
-}
+.status.offline {color: hsla(0, 0%, 50%, .3)}
 
 /* Navigation bar
   ----------------------------
@@ -323,9 +268,7 @@ span.visible-xs-inline.showmenutext {display: none !important}
     line-height: 50px;
 }
 
-#submenu a {
-    color: var(--nav-fg) !important;
-}
+#submenu a {color: var(--nav-fg) !important}
 
 #submenu li.active>a {
     color: var(--accent-color);
@@ -335,6 +278,17 @@ span.visible-xs-inline.showmenutext {display: none !important}
 #submenu a:focus, #submenu a:hover, #submenu li.active>a:hover {
     background-color: var(--menu-highlight);
     color: var(--accent-color) !important;
+}
+
+.unread-count:after {
+    left: 30px;
+    top: 6px;
+    font-size: .7em;
+    text-align: left;
+    color: var(--accent-color);
+    font-weight: 600;
+    background: hsla(0, 0%, 0%, 0);
+    border: 0;
 }
 
 
@@ -356,10 +310,7 @@ span.visible-xs-inline.showmenutext {display: none !important}
     box-shadow: none
 }
 
-.categories>li .content .icon,
-.category>ul>li .content .icon {
-    border-radius: 50%;
-}
+.categories>li .content .icon, .category>ul>li .content .icon {border-radius: 50%}
 
 .categories>li,
 .category>ul>li {
@@ -367,10 +318,7 @@ span.visible-xs-inline.showmenutext {display: none !important}
     padding-bottom: 20px;
 }
 
-.categories>li:hover,
-.category>ul>li:hover {
-    background-color: transparent !important;
-}
+.categories>li:hover, .category>ul>li:hover {background-color: transparent !important}
 
 .categories>li:last-of-type,
 .category>ul>li:last-of-type {
@@ -378,9 +326,7 @@ span.visible-xs-inline.showmenutext {display: none !important}
     padding-bottom: 25px;
 }
 
-.categories>li .content h2, .category>ul>li .content h2 {
-    font-size: 1.5rem;
-}
+.categories>li .content h2, .category>ul>li .content h2 {font-size: 1.5rem}
 
 h2.title a,
 a.search-result-text h4,
@@ -398,51 +344,28 @@ span.pull-right.post-preview-footer a {
     min-height: 25px;
 }
 
-div.description p {
-    color: var(--main-fg);
-}
+div.description p {color: var(--main-fg)}
 
 span.category-children a small {
     font-weight: 400 !important;
     color: var(--header-fg);
 }
 
-span.category-children a small:hover {
-    color: var(--accent-color) !important;
-}
+span.category-children a small:hover {color: var(--accent-color) !important}
 
-span.category-children a small {
-    font-weight: 500;
-}
+span.category-children a small {font-weight: 500}
 
-div.description {
-    color: var(--second-fg) !important;
-}
+div.description {color: var(--second-fg) !important}
 
-li a span:hover {
-    color: var(--second-fg)
-}
+li a span:hover {color: var(--second-fg)}
 
-.stats small {
-    color: var(--second-fg);
-}
+.stats small {color: var(--second-fg)}
 
-span.timeago, small.timeago,
-.breadcrumb>.active,
-.topic h1 .topic-title,
-.posts-list .posts-list-item .topic-title,
-.topic .posts>li a,
-a {
-    color: var(--third-fg);
-}
+span.timeago, small.timeago, .breadcrumb>.active, .topic h1 .topic-title, .posts-list .posts-list-item .topic-title, .topic .posts>li a, a {color: var(--third-fg)}
 
-.topic .posts>li a:hover {
-    color: var(--accent-color);
-}
+.topic .posts>li a:hover {color: var(--accent-color)}
 
-.topic [component="post/replies"] {
-	margin-top: 28px;
-}
+.topic [component="post/replies"] {margin-top: 28px}
 
 li[component="post"] {
     background: var(--second-bg);
@@ -452,13 +375,9 @@ li[component="post"] {
     border-bottom: 1px solid var(--main-bg)
 }
 
-li[component="post"]:last-of-type {
-    border-bottom: none;
-}
+li[component="post"]:last-of-type {border-bottom: none}
 
-blockquote {
-    background-color: var(--main-bg);
-}
+blockquote {background-color: var(--main-bg)}
 
 .tooltip-inner {
     max-width: 200px;
@@ -468,14 +387,9 @@ blockquote {
 
 }
 
-div.message-body p,
-span.chat-timestamp.timeago {
-    font-weight: 400;
-}
+div.message-body p, span.chat-timestamp.timeago {font-weight: 400}
 
-#vivaldifooter a {
-    color: var(--third-fg)
-}
+#vivaldifooter a {color: var(--third-fg)}
 
 /*.dropdown-menu-right:after {
     border-color: hsla(0, 0%, 0%, 0) hsla(0, 0%, 0%, 0) var(--menu-bg) hsla(0, 0%, 0%, 0);
@@ -512,14 +426,9 @@ div.panel-heading {
     border: none;
 }
 
-div.content p code {
-    background-color: transparent
-}
+div.content p code {background-color: transparent}
 
-.panel-default>.panel-heading,
-div.panel-body {
-    background: var(--second-bg)
-}
+.panel-default>.panel-heading, div.panel-body {background: var(--second-bg)}
 
 /* Community page
   ----------------------------
@@ -545,57 +454,40 @@ pre {
     border-radius: 2px;
 }
 
-pre code {
-    background-color: var(--header-bg) !important;
-}
+pre code {background-color: var(--header-bg) !important}
 
 code {
     color: var(--accent-color);
     background: transparent
 }
 
-div.content pre code {
-    color: var(--second-fg)
-}
+div.content pre code {color: var(--second-fg)}
 
 /* Code mark up */
-.hljs-keyword, .hljs-selector-tag {
-    color: var(--button-bg);
-}
+.hljs-keyword, .hljs-selector-tag {color: var(--button-bg)}
 
-.hljs-title, .hljs-doctag, .hljs-type, .hljs-attr, .hljs-built_in, .hljs-builtin-name, .hljs-params {
-    color: var(--link-color)
-}
+.hljs-title, .hljs-doctag, .hljs-type, .hljs-attr, .hljs-built_in, .hljs-builtin-name, .hljs-params {color: var(--link-color)}
 
 .hljs-comment, .hljs-quote {
     color: var(--header-fg);
     font-style: italic;
 }
 
-.hljs-attribute, .hljs-subst {
-    color: var(--button-hover);
-}
+.hljs-attribute, .hljs-subst {color: var(--button-hover)}
 
-.hljs, .hljs-number {
-    color: var(--second-fg);
-}
+.hljs, .hljs-number {color: var(--second-fg)}
 
-.hljs-meta {
-    color: var(--accent-color);
-}
+.hljs-meta {color: var(--accent-color)}
 
 /* Message composer
   ----------------------------
 */
-.composer,
-.composer .title-container .title {
+.composer, .composer .title-container .title {
     background-color: var(--second-bg);
     color: var(--third-fg);
 }
 
-.composer.resizable {
-    box-shadow: 0 5px 15px rgba(0,0,0,.8);
-}
+.composer.resizable {box-shadow: 0 5px 15px rgba(0,0,0,.8)}
 
 .taskbar .navbar-nav li.taskbar-composer a,
 .taskbar .navbar-nav li.taskbar-composer a:active,
@@ -606,13 +498,9 @@ button.fab.dropdown-toggle {
     opacity: .95;
 }
 
-.taskbar .navbar-nav li a {
-    padding: 5px 15px;
-}
+.taskbar .navbar-nav li a {padding: 5px 15px}
 
-.composer .formatting-bar .formatting-group li {
-    color: var(--second-fg)
-}
+.composer .formatting-bar .formatting-group li {color: var(--second-fg)}
 
 .composer .preview, .composer .write,
 div.preview.well {
@@ -620,9 +508,7 @@ div.preview.well {
     border: none !important;
 }
 
-textarea.write, div.preview.well {
-    color: var(--main-fg)
-}
+textarea.write, div.preview.well {color: var(--main-fg)}
 
 /* Composer tooltip */
 .taskbar-composer::after {
@@ -646,21 +532,14 @@ textarea.write, div.preview.well {
     padding: 0.2em 0.5em;
 }
 
-.taskbar-composer.active:hover::after {
-    content: "Hide";
-}
+.taskbar-composer.active:hover::after {content: "Hide"}
 
 /* Emoji picker
   ----------------------------
 */
-.emoji-dialog .top-bar {
-    height: 0
-}
+.emoji-dialog .top-bar {height: 0}
 
-.emoji-tabs .emoji-dialog-search-container,
-.emoji-tabs .emoji-dialog-search-container .emoji-dialog-search {
-    background: var(--header-bg)
-}
+.emoji-tabs .emoji-dialog-search-container, .emoji-tabs .emoji-dialog-search-container .emoji-dialog-search {background: var(--header-bg)}
 
 .emoji-tabs .emoji-dialog-search-container button.close {
     background: var(--header-bg);
@@ -699,9 +578,7 @@ textarea.write, div.preview.well {
 
 /* Chat
   ----------------------------
-*/.chat-modal .chat-content li.chat-message .chat-user a, .expanded-chat .chat-content li.chat-message .chat-user a {
-    color: var(--third-fg);
-}
+*/.chat-modal .chat-content li.chat-message .chat-user a, .expanded-chat .chat-content li.chat-message .chat-user a {color: var(--third-fg)}
 
 .chats-list {
     border-top: 0;
@@ -720,9 +597,7 @@ textarea.write, div.preview.well {
     padding: 8px; 
 }
 
-.chat-modal [component="chat/composer"], .chats-full [component="chat/composer"] {
-    background: var(--main-bg)
-}
+.chat-modal [component="chat/composer"], .chats-full [component="chat/composer"] {background: var(--main-bg)}
 
 .chat-modal [component="chat/composer"] [data-action=send], .chats-full [component="chat/composer"] [data-action=send],
 .chat-modal [component="chat/composer"] [data-action=send]:hover, .chat-modal [component="chat/composer"] [data-action=send]:focus,
@@ -732,17 +607,11 @@ textarea.write, div.preview.well {
     margin: 25px 5px;
 }
 
-.fa-paper-plane:before, .fa-send:before {
-    -webkit-text-fill-color: var(--second-fg)
-}
+.fa-paper-plane:before, .fa-send:before {-webkit-text-fill-color: var(--second-fg)}
 
-.fa-paper-plane:hover:before, .fa-send:hover:before {
-    -webkit-text-fill-color: var(--second-button-bg)
-}
+.fa-paper-plane:hover:before, .fa-send:hover:before {-webkit-text-fill-color: var(--second-button-bg)}
 
-.chat-modal .chat-content li.chat-message[data-break=true], .expanded-chat .chat-content li.chat-message[data-break=true] {
-    border-top: 1px solid var(--main-bg);
-}
+.chat-modal .chat-content li.chat-message[data-break=true], .expanded-chat .chat-content li.chat-message[data-break=true] {border-top: 1px solid var(--main-bg)}
 
 textarea.form-control, textarea.form-control:focus {
     background: var(--second-bg);
@@ -750,14 +619,9 @@ textarea.form-control, textarea.form-control:focus {
     color: var(--main-fg);
 }
 
-.bg-info {
-    background: var(--second-bg) !important;
-}
+.bg-info {background: var(--second-bg) !important}
 
-ul.chat-list.chats-list li,
-img.user-img.avatar.avatar-sm.avatar-rounded {
-    border: none;
-}
+ul.chat-list.chats-list li, img.user-img.avatar.avatar-sm.avatar-rounded {border: none}
 
 .modal-header, .modal-header.ui-draggable-handle,
 .chat-modal [component="chat/header"], .chats-full [component="chat/header"]{
@@ -765,9 +629,7 @@ img.user-img.avatar.avatar-sm.avatar-rounded {
     border:0
 }
 
-.ui-resizable-handle:active {
-    background: transparent;
-}
+.ui-resizable-handle:active {background: transparent}
 
 div.modal-body,
 div.modal-footer {
@@ -792,21 +654,13 @@ div.modal-body {
     padding: 0;
 }
 
-li.chat-message.clear {
-    border-color: var(--main-bg);
-}
+li.chat-message.clear {border-color: var(--main-bg)}
 
-.chat-modal [component="chat/nav-wrapper"], .chats-full [component="chat/nav-wrapper"] {
-    box-shadow: none;
-}
+.chat-modal [component="chat/nav-wrapper"], .chats-full [component="chat/nav-wrapper"] {box-shadow: none}
 
-.notifications-list li:nth-child(even), .notifications-list li:nth-child(odd) {
-    background: var(--second-bg);
-}
+.notifications-list li:nth-child(even), .notifications-list li:nth-child(odd) {background: var(--second-bg)}
 
-.notifications-list li.unread {
-    background: var(--main-bg);
-}
+.notifications-list li.unread {background: var(--main-bg)}
 
 .chat-modal [component="chat/nav-wrapper"] [component="chat/search/list"] li, .chats-full [component="chat/nav-wrapper"] [component="chat/search/list"] li,
 .chat-modal [component="chat/nav-wrapper"] [component="chat/search/list"], .chats-full [component="chat/nav-wrapper"] [component="chat/search/list"],
@@ -842,9 +696,7 @@ li.chat-message.clear {
     color: var(--button-fg);
 }
 
-button.btn.btn-default.dropdown-toggle {
-    border: 1px solid var(--second-bg);
-}
+button.btn.btn-default.dropdown-toggle {border: 1px solid var(--second-bg)}
 
 
 button.btn.btn-info.dropdown-toggle {
@@ -853,22 +705,13 @@ button.btn.btn-info.dropdown-toggle {
     border: 0;
 }
 
-button.btn.btn-info.dropdown-toggle:hover {
-    background: var(--button-hover);
-}
+button.btn.btn-info.dropdown-toggle:hover {background: var(--button-hover)}
 
-.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
-    border-right: 1px solid var(--second-bg);
-}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {border-right: 1px solid var(--second-bg)}
 
-i.fa.fa-pencil-square.pointer.edit-icon,
-.breadcrumb .fa {
-    color: var(--grey);
-}
+i.fa.fa-pencil-square.pointer.edit-icon, .breadcrumb .fa {color: var(--grey)}
 
-.breadcrumb .fa:hover {
-    color: hsl(32, 88%, 56%);
-}
+.breadcrumb .fa:hover {color: hsl(32, 88%, 56%)}
 
 a.btn.btn-xs.btn-default.hidden-xs,
 span.tag {
@@ -879,9 +722,7 @@ span.tag {
     font-size: .8em;
 }
 
-a.btn.btn-xs.btn-default.hidden-xs:hover {
-    background-color: var(--second-button-bg) !important;
-}
+a.btn.btn-xs.btn-default.hidden-xs:hover {background-color: var(--second-button-bg) !important}
 
 #user-control-list i.fa.fa-fw.fa-user,
 i.fa.fa-fw.fa-cogs,
@@ -947,46 +788,24 @@ li.page a:hover {
     border: 1px solid var(--second-bg);
 }
 
-.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
-    border-color: var(--second-bg)
-}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {border-color: var(--second-bg)}
 
-small.pull-right a {
-    color: var(--third-fg) !important;
-}
+small.pull-right a {color: var(--third-fg) !important}
 
-small.pull-right a:hover {
-    color: var(--accent-color) !important;
-}
+small.pull-right a:hover {color: var(--accent-color) !important}
 
-#mobile-menu:hover, #mobile-menu:focus, #mobile-menu:active {
-    background: var(--menu-highlight)
-}
+#mobile-menu:hover, #mobile-menu:focus, #mobile-menu:active {background: var(--menu-highlight)}
 
-a.dropdown-toggle img,
-img.user-img,
-div.user-icon.user-img {
-    border-color: var(--second-bg) !important;
-}
+a.dropdown-toggle img, img.user-img, div.user-icon.user-img {border-color: var(--second-bg) !important}
 
-.dropdown-menu>li>a:focus,
-.dropdown-menu>li>a:hover {
-    color: var(--accent-color) !important;
-}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {color: var(--accent-color) !important}
 
-ul.dropdown-menu.dropdown-menu-right a,
-ul.dropdown-menu.dropdown-menu-right a:hover {
-    color: var(--second-fg) !important;
-}
+ul.dropdown-menu.dropdown-menu-right a, ul.dropdown-menu.dropdown-menu-right a:hover {color: var(--second-fg) !important}
 
-.copy-all-code-button {
-    right: 35px;
-}
+.copy-all-code-button {right: 35px}
 
 /* Vote indicator */
-.votes span {
-    color: hsl(170, 100%, 30%) !important
-}
+.votes span {color: hsl(170, 100%, 30%) !important}
 
 /* Advanced emoji mod
   ----------------------------
